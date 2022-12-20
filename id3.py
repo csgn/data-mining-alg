@@ -65,3 +65,7 @@ exclude = ["customer"]
 # first epoch
 a = id3(df, target="risk", exclude=exclude)
 print(a)
+
+df = pd.read_csv("weather.csv")
+a = id3(df, exclude=["id"], target="play")
+print(a)
