@@ -63,9 +63,11 @@ df = pd.DataFrame(a)
 exclude = ["customer"]
 
 # first epoch
-a = id3(df, target="risk", exclude=exclude)
-print(a)
+x = id3(df, target="risk", exclude=exclude)
+x = x.idxmin().values[0]
 
-df = pd.read_csv("weather.csv")
-a = id3(df, exclude=["id"], target="play")
-print(a)
+print(df[x][df[x] == 'High'].index)
+
+# df = pd.read_csv("weather.csv")
+# a = id3(df, exclude=["id"], target="play")
+# print(a)
