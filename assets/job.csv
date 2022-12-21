@@ -1,0 +1,11 @@
+customer,debt,revenue,status,risk
+1,High,High,Employeer,Bad
+2,High,High,Employee,Bad
+3,High,Low,Employee,Bad
+4,Low,Low,Employee,Good
+5,Low,Low,Employeer,Bad
+6,Low,High,Employeer,Good
+7,Low,High,Employee,Good
+8,Low,Low,Employee,Good
+9,Low,Low,Employeer,Bad
+10,Low,High,Employeer,Good
